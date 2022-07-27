@@ -1,0 +1,28 @@
+.page-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.page-wrapper .page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: transform 4s, opacity 4s;
+}
+
+.transition-enter.transition-enter-active {
+  transform: translate3d(0, 0, 0);
+}
+
+.transition-enter-done {
+  transform: translate3d(100%, 0, 0);
+}
+
+.transition-exit.transition-exit-active {
+  transform: translate3d(0, 0, 0);
+}
+
+.transition-exit-done {
+  transform: translate3d(-100%, 0, 0);
+}
